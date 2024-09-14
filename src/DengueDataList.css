@@ -1,0 +1,106 @@
+/* Container for the dengue data list */
+.dengue-data-list {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  max-height: 400px; /* Adjust height based on your design */
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+/* Styling for headers */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the edit form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input fields styling */
+.form-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Buttons styling */
+.form-button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.cancel-button {
+  background-color: #6c757d;
+}
+
+/* Styling for data list */
+.data-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for individual data items */
+.data-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Button styling within list items */
+.data-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-button {
+  background-color: #28a745;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+/* Additional styling for Delete All button */
+.delete-all-button {
+  background-color: #dc3545;
+  margin-bottom: 20px; /* Add some space below the button */
+}
+
+/* Optional: Style for button hover effect */
+.delete-all-button:hover {
+  background-color: #c82333;
+}

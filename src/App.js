@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AddDengueData from "./AddDengueData";
+import DengueDataList from "./DengueDataList";
+import DengueDataChart from "./DengueDataChart";
+import CsvUploader from "./CsvUploader";
+import './App.css'; // Import the updated CSS file
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Dengue Data Dashboard</h1>
+      <div className="dashboard">
+        <div>
+          <AddDengueData />
+        </div>
+        <div>
+          <CsvUploader /> {/* Uncomment if you need CSV upload */}
+        </div>
+        <div>
+          <DengueDataList />
+        </div>
+        <div>
+          <DengueDataChart />
+        </div>
+      </div>
     </div>
   );
 }
